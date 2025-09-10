@@ -79,7 +79,7 @@ app.delete("/api/persons/:id", (request, response) => {
 app.get("/info", (request, response) => {
     return response.send(`<div><p>Phonebook has info for ${persons.length} people</p> <p>${new Date()}</p></div>`)
 })
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log("Server listening on port ", PORT)
 })
