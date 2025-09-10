@@ -7,6 +7,7 @@
     "build:ui": "@powershell if (Test-Path dist) { Remove-Item -Recurse -Force dist } && cd ../phonebook-frontend && npm run build && @powershell Copy-Item dist -Recurse ../phone-fullstack",
     "deploy:full": "npm run build:ui && git add . && git commit -m \"initial code for the backend and the frontend \" && git push",
     "dev": "node --watch index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
