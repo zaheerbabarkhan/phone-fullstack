@@ -1,0 +1,18 @@
+### Get All Persons
+GET http://localhost:3001/api/persons
+
+### Get Single Person
+GET http://localhost:3001/api/persons/2
+
+### Delete Single Person
+DELETE http://localhost:3001/api/persons/1
+
+### Create Person
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "test name 1",
+    "number": "39-44-5323524"
+}
